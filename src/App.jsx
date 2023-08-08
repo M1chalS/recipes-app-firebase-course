@@ -5,7 +5,7 @@ import LoginForm from "./components/LoginForm.jsx";
 import {onAuthStateChanged} from "firebase/auth";
 import {auth, db} from "./FirebaseConfig.js";
 import AddEditRecipeForm from "./components/AddEditRecipeForm.jsx";
-import {addDoc, collection, query, getDocs, where, doc, updateDoc, deleteDoc, orderBy, limit} from "firebase/firestore";
+import {addDoc, collection, deleteDoc, doc, getDocs, limit, orderBy, query, updateDoc, where} from "firebase/firestore";
 
 export default function App() {
     const [user, setUser] = useState(null);
@@ -197,6 +197,11 @@ export default function App() {
                                                 </div> : null
                                             }
                                             <div className="recipe-name">{recipe.name}</div>
+                                            <div className="recipe-image-box">
+                                                {
+                                                    recipe.imageUrl && <img className="recipe-image" src={recipe.imageUrl} alt="Recipe image..." />
+                                                }
+                                            </div>
                                             <div
                                                 className="recipe-field">Category: {lookupCategoryLabel(recipe.category)}</div>
                                             <div className="recipe-field">Publish
