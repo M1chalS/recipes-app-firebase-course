@@ -59,7 +59,7 @@ export default function LoginForm({existingUser}) {
                            onChange={(event) => setPassword(event.target.value)} className="input-text"/>
                 </label>
                 <div className="button-box">
-                    <button type="submit" className="primary-button">Register</button>
+                    <button type="submit" className="primary-button">Login</button>
                     <button type="button" className="primary-button" onClick={handleSendResetPasswordEmail}>Reset Password</button>
                     <button type="button" className="primary-button" onClick={handleLoginWithGoogle}>Login with Google</button>
                 </div>
