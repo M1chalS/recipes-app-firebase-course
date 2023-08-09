@@ -1,0 +1,18 @@
+### Create recipe
+POST http://localhost:3006/recipes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImNmM2I1YWRhM2NhMzkxNTQ4ZDM1OTJiMzU5MjkyM2UzNjAxMmI5MTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmlyLXJlY2lwZXMtNjQ4OTQiLCJhdWQiOiJmaXItcmVjaXBlcy02NDg5NCIsImF1dGhfdGltZSI6MTY5MTU3NjU5OSwidXNlcl9pZCI6IkcwMVJrZ1M2SjNOVGk2c3lUUE1yRlhYdENhbjEiLCJzdWIiOiJHMDFSa2dTNkozTlRpNnN5VFBNckZYWHRDYW4xIiwiaWF0IjoxNjkxNTc2NTk5LCJleHAiOjE2OTE1ODAxOTksImVtYWlsIjoibWljaGFsc3pham5lckB3cC5wbCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIm1pY2hhbHN6YWpuZXJAd3AucGwiXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.oNDx2gF_bM-KlrWCLQ98CgCHe7PobA42begPTwshtynMUGRb4YNBHpR9rVJtoGCh9WNidEGYiBXN_sCceG_muu6F_4S64ycmw76gi_r7aLvHcsLfxhdP2xIFwRztkClTmmLBfxDAbrZp4-P7JYFgNY0tEf4xk3lM_MggqG_QnnQ9BFKY_ec3BFMdWsLKntagjnhJK0UwmS2yB0c88iyRacMAdNqQYWxbH4EWjkHduO-9Jxk9PAQ9nwOiTeDi8ojOUU5JToNW5k56m6jN83YIL-34alNlsn6xobDriUd1o-BDbv1BZeuUv667t_CwbvtEW_2rJdBvB4onUICd4dPEyQ
+
+{
+  "name": "Pasta",
+  "category": "eggsBreakfast",
+  "directions": "Boil water, add pasta, cook for 10 minutes, drain, add sauce",
+  "ingredients": [
+    "pasta",
+    "sauce"
+  ],
+  "publishDate": 1607324555,
+  "imageUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbcgoodfood.com%2Frecipes%2Fcollection%2Fpasta&psig=AOvVaw0QZ3Z3X6Z2Z4Z2Z2Z2Z2Z2&ust=1607324680162000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjQ4ZqHlu0CFQAAAAAdAAAAABAD",
+  "isPublished": true
+}
+
